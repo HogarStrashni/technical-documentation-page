@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnicalDocumentationPage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Plus+Jakarta+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+
+        <header>Content HTML Elements</header>
+
+        <div>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Using_main_Tag">Using main Tag</a>
+            <a class="nav-link" href="#Using_header_Tag">Using header Tag</a>
+            <a class="nav-link" href="#Using_footer_Tag">Using footer Tag</a>
+            <a class="nav-link" href="#Using_nav_Tag">Using nav Tag</a>
+            <a class="nav-link" href="#Using_section_and_article_Tag">Using section and article Tag</a>
+            <a class="nav-link" href="#Reference">Reference</a>
+        </div>
+
+    </nav>
+
+
+    <main id="main-doc">
+
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>HTML5 introduced several new elements that give developers more options while also incorporating accessibility features. These tags include:</p>
+            <ul>
+                <li><code>main</code></li>
+                <li><code>header</code></li>
+                <li><code>footer</code></li>
+                <li><code>nav</code></li>
+                <li><code>article</code> and </li>
+                <li><code>section</code></li>
+            </ul>
+            <p>By default, a browser renders these elements similar to the humble <code>div</code>. However, using them where appropriate gives additional meaning to your markup. The tag name alone can indicate the type of information it contains, which adds semantic meaning to that content. Assistive technologies can access this information to provide better page summary or navigation options to their users.</p>
+        </section>
+
+        <section id="Using_main_Tag" class="main-section">
+            <header>Using main Tag</header>
+            <p>The <code>main</code> element is used to wrap (you guessed it) the main content, and there should be only one per page. It's meant to surround the information related to your page's central topic. It's not meant to include items that repeat across pages, like navigation links or banners.</p>
+            <p>The <code>main</code> tag also has an embedded landmark feature that assistive technology can use to navigate to the main content quickly. If you've ever seen a "Jump to Main Content" link at the top of a page, using the <code>main</code> tag automatically gives assistive devices that functionality.</p>
+        </section>
+
+        <section id="Using_header_Tag" class="main-section">
+            <header>Using header Tag</header>
+            <p>The next HTML5 element that adds semantic meaning and improves accessibility is the <code>header</code> tag. It's used to wrap introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.</p>
+            <p><code>header</code> shares the embedded landmark feature you saw with <code>main</code>, allowing assistive technologies to quickly navigate to that content.</p>
+            <p><b>Note:</b> The header is meant for use in the body tag of your HTML document. It is different than the head element, which contains the page's title, meta information, etc.</p>
+        </section>
+
+        <section id="Using_footer_Tag" class="main-section">
+            <header>Using footer Tag</header>
+            <p>Similar to <code>header</code>, the <code>footer</code> element has a built-in landmark feature that allows assistive devices to quickly navigate to it. It's primarily used to contain copyright information or links to related documents that usually sit at the bottom of a page.</p>
+        </section>
+
+        <section id="Using_nav_Tag" class="main-section">
+            <header>Using nav Tag</header>
+            <p>The <code>nav</code> element is another HTML5 item with the embedded landmark feature for easy screen reader navigation. This tag is meant to wrap around the main navigation links in your page.</p>
+            <p>If there are repeated site links at the bottom of the page, it isn't necessary to markup those with a <code>nav</code> tag as well. Using a <code>footer</code> is sufficient.</p>
+        </section>
+
+        <section id="Using_section_and_article_Tag" class="main-section">
+            <header>Using section and article Tag</header>
+            <p><code>article</code> is another one of the new HTML5 elements that add semantic meaning to your markup. <code>article</code> is a sectioning element and is used to wrap independent, self-contained content. The tag works well with blog entries, forum posts, or news articles.</p>
+            <p>Determining whether content can stand alone is usually a judgment call, but you can use a couple of simple tests. Ask yourself if you removed all surrounding context, would that content still make sense? Similarly, for text, would the content hold up if it were in an RSS feed?</p>
+            <p>Remember that folks using assistive technologies rely on organized, semantically meaningful markup to better understand your work.</p>
+            <p><b>Note:</b> The <code>section</code> element is also new with HTML5, and has a slightly different semantic meaning than <code>article</code>. An <code>article</code> is for standalone content, and a <code>section</code> is for grouping thematically related content. They can be used within each other, as needed. For example, if a book is the <code>article</code>, then each chapter is a <code>section</code>. When there's no relationship between groups of content, then use a <code>div</code>:</p>
+            <ul>
+                <li><code>div</code> - groups content,</li>
+                <li><code>section</code> - groups related content</li>
+                <li><code>article</code> - groups independent, self-contained content.</li>
+            </ul>
+
+            <section id="Reference" class="main-section">
+                <header>Reference</header>
+                <ul>
+                    <li>all the documentation in this page is taken from <a href="https://www.freecodecamp.org/" target="blank">FreeCodeCamp<i class="fa-brands fa-free-code-camp"></i></a></li>
+                </ul>
+
+            </section>
+
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/5ff68f4fdc.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

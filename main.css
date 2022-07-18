@@ -1,0 +1,92 @@
+/* GENERAL */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(247, 247, 247);
+}
+
+/* POSITION ALL ELEMENTS */
+nav {
+    position: fixed;
+    width: 390px;
+    height: 100%;
+    border-right: 2px solid rgb(170, 170, 170);
+    overflow-y: auto;
+}
+
+main {
+    position: relative;
+    width: calc(100% - 390px);
+    left: 390px;
+    line-height: 1.5;
+}
+
+/* STYLING ALL ELEMENTS */
+#navbar > header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+    color: rgb(75, 75, 75)
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: crimson;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+
+#navbar a:hover {
+    color: rgb(200, 200, 200);
+}
+
+
+#main-doc header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.75rem;
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    color: crimson;
+}
+
+.main-section p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    text-align: justify;
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+
+.main-section ul {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    padding-left: 7rem;
+    padding-right: 2rem;
+}
+
+
+code {
+    background: rgb(204, 204, 204);
+}
+
+
+@media (max-width: 800px) {
+    nav {
+        width: 100%;
+        height: 200px;
+    }
+    main {
+        left: 0;
+        width: 100%;
+        top: 200px;
+        height: calc(100vh - 200px);
+        line-height: 1.2;
+        overflow-y: auto;
+        border-top: 2px solid rgb(170, 170, 170);
+    }
+}
